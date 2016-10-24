@@ -1,5 +1,9 @@
-# otroska-nogometna-sola
-Projekt spletme aplikacije za Otroško nogometni šolo.
+# OTROŠKA NOGOMETNA ŠOLA
+
+Projekt spletne aplikacije za Otroško nogometni šolo.
+
+Spletna stran bo namenjena trenerjem in staršem. Trenerjem bo omogočala lažjo komuninikacijo s starši, ki bodo tako preko spletne strani prejeli elektronsko pošto, če bodo to želeli.
+
 
 Spletna stran bo vsebovala:
  - obvestila za starše
