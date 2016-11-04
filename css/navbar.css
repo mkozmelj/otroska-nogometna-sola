@@ -1,0 +1,101 @@
+#bar {
+	width: 100%; 
+	background-color: #ffc36b; 
+	height: 130px;
+}
+
+#logo {
+	float: left; 
+	line-height: 50px; 
+	margin-left: 10px; 
+}
+
+nav {
+	width: 100%; 
+	text-align: center;
+}
+
+nav ul {
+	float: right; 
+	line-height: 50px;
+}
+
+nav li {
+	display: inline; 
+	list-style-type: none;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 15px; 
+	color: #ff940E; 
+	font-family: myriad-pro, sans-serif; 
+	font-style: normal; 
+	font-weight: 500;   
+	font-size: 30px;
+}
+
+nav a:hover {
+	color: #e88310; 
+	font-size: 40px
+}
+ 
+@media screen and (max-width: 1200px) {
+ 	#logo {}
+ 	nav {}
+ 	nav ul {}
+ 	nav li {}
+ 	nav a {
+ 		font-size: 20px;
+ 	}
+ 	nav a:hover {
+ 		color: #e88310; 
+ 		font-size: 30px;
+ 	}
+}
+@media only screen and (min-width: 900px) {
+    nav img {
+	    display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+
+  nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 150px;
+    width: 50px;
+    height: 500px;
+    text-align: left;
+    text-decoration: none; 
+    padding: 15px; 
+    color: #ff940E;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal; font-weight: 500;   
+    font-size: 30px;
+  }
+  
+  nav:hover {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  nav:hover ul {
+    display: block;
+    position: absolute;
+    margin-top: 30px;
+    width: 200px;
+    text-align: left;
+    background-color: #dddad7;
+    float: right;
+  }
+}
+
+.active {
+  color: #e88310; 
+  font-size: 40px
+}

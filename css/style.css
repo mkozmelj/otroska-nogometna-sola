@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+}
+
+h1, h2, h3, p {	
+	font-family: myriad-pro, sans-serif; 
+	font-style: normal; 
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	color: #ff940E; 
+	font-size: 40px;
+}
+
+h2 {
+	color: #ff940E; 
+	font-size: 25px;
+}
+
+p {
+	font-size: 18px;
+}
