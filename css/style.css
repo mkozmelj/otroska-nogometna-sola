@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 * {
 	margin: 0;
 }
 
-h1, h2, h3, p {	
-	font-family: myriad-pro, sans-serif; 
-	font-style: normal; 
-	font-weight: 500;
+h1, h2, h3, p, label, input[placeholder], a, button {	
+	font-family: 'Lato', sans-serif;
+}
+
+input[placeholder] {
+	text-align: center;
 }
 
 a {
@@ -24,4 +28,9 @@ h2 {
 
 p {
 	font-size: 18px;
+}
+
+button {
+	background-color: #ffc36b; 
+	border: 1px solid #ff940E;	
 }

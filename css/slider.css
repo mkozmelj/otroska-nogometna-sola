@@ -27,16 +27,16 @@
 	}
 }
 
-#slider {
+.slider {
 	overflow: hidden;
 }
 
-#slider figure img {
+.slider figure img {
 	width: 20%;
 	float: left;
 }
 
-#slider figure {
+.slider figure {
 	position: relative;
 	width: 500%;
 	margin: 0;

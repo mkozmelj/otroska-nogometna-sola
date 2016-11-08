@@ -1,0 +1,41 @@
+h1, h2, p {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-right: 25px;
+}
+
+.dopis {
+	margin: 0;
+	font-size: 15px;
+}
+
+.obvestilo {
+	border: 1px solid #ff940E;	
+	background-color: #ddd7cc;
+	margin-left: 10%;
+	margin-top: 60px;
+	display: block;
+	text-align: left;
+	font-family: myriad-pro, sans-serif; 
+	font-style: normal; 
+	font-weight: 500;
+}
+
+.levo {
+	float: left;
+	width: 50%;
+}
+
+.desno {
+	float: right;
+	width: 50%;
+	margin-top: 20px;
+	text-align: center;
+}

@@ -1,0 +1,56 @@
+h1 {
+	padding-left: 20px;	
+}
+
+.slike {
+	margin: auto;
+	width: 80%;
+}
+
+table {
+	padding: 20px;
+	width: 100%; 
+	float: center;
+	margin: auto;
+}
+
+.slike1 {
+	display: none;
+}
+
+.sl {
+		width: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+	.slike {
+		display: none;
+	}
+
+	.slike1 {
+		display: block;
+	}
+
+	.sl {
+		width: 50%;
+	}
+}
+
+.video {
+	display: inline;
+}
+
+.video1 {
+	display: none;
+	margin-left: 20%;
+}
+
+@media screen and (max-width: 1200px) {
+	.video {
+		display: none;
+	}
+
+	.video1 {
+		display: block;
+	}
+}

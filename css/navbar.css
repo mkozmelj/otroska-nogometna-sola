@@ -1,10 +1,10 @@
-#bar {
+.bar {
 	width: 100%; 
 	background-color: #ffc36b; 
 	height: 130px;
 }
 
-#logo {
+.logo {
 	float: left; 
 	line-height: 50px; 
 	margin-left: 10px; 
@@ -27,12 +27,9 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	padding: 15px; 
-	color: #ff940E; 
-	font-family: myriad-pro, sans-serif; 
-	font-style: normal; 
-	font-weight: 500;   
-	font-size: 30px;
+	padding: 15px;
+  color: #ff940E;
+  font-size: 30px; 
 }
 
 nav a:hover {
@@ -41,7 +38,7 @@ nav a:hover {
 }
  
 @media screen and (max-width: 1200px) {
- 	#logo {}
+ 	.logo {}
  	nav {}
  	nav ul {}
  	nav li {}
@@ -53,13 +50,13 @@ nav a:hover {
  		font-size: 30px;
  	}
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
     nav img {
 	    display: none;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   nav ul {
     display: none;
   }
@@ -74,8 +71,6 @@ nav a:hover {
     text-decoration: none; 
     padding: 15px; 
     color: #ff940E;
-    font-family: myriad-pro, sans-serif;
-    font-style: normal; font-weight: 500;   
     font-size: 30px;
   }
   
