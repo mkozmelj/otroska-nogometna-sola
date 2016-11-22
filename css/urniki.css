@@ -36,6 +36,7 @@ table {
 
 .urnik1 {
 	display: none;
+	margin-top: 0px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -48,3 +49,7 @@ table {
 	}
 }
 
+@media only screen and (max-width: 1000px) {
+	.urnik1 {
+		margin-top: -300px;
+	}
