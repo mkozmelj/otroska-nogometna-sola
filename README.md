@@ -1,6 +1,6 @@
 # OTROŠKA NOGOMETNA ŠOLA
 
-Projekt spletne aplikacije za Otroško nogometni šolo.
+<strong>Projekt spletne aplikacije za Otroško nogometni šolo.</strong>
 
 Spletna stran bo namenjena trenerjem in staršem. Trenerjem bo omogočala lažjo komuninikacijo s starši, ki bodo tako preko spletne strani prejeli elektronsko pošto, če bodo to želeli.
 
