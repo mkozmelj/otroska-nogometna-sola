@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Otroska nogometna sola</title>
+  <meta charset="utf-8"/>
+  {% load static %}
+  <link href="{% static 'favicon.ico' %}" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="{% static 'obvestila/css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'obvestila/css/slider.css' %}">
+  <link rel="stylesheet" type="text/css" href="{%  static 'obvestila/css/navbar.css' %}">
+  <script type="text/javascript" src="{% static 'obvestila/scripts/script.js' %}"></script>
+</head>
+  <body>
+    <div class = "bar">
+      <div class = "logo"><a href="../../index"><img alt="logo" src="../static/obvestila/img/logo_ons.png"></a></div>
+      <nav>
+        <img alt="hambi" src="../static/obvestila/img/meni.png">
+        <ul>
+	          <li><a href="../../obvestila">OBVESTILA</a></li>
+	          <li><a href="../../../obvestila/templates/obvestila/urniki">URNIKI</a></li>
+	          <li><a href="../../../obvestila/templates/obvestila/galerija">GALERIJA</a></li>
+	          <li><a href="../../../obvestila/templates/obvestila/prijava">PRIJAVA</a></li>
+        </ul>
+      </nav>
+    </div> 
+    <div class = "slider">
+	    <figure>
+	    	<img alt="zoga1" src="../static/obvestila/img/zoga1.jpg">
+	    	<img alt="zoga2" src="../static/obvestila/img/avtobus1.jpg">
+	    	<img alt="zoga3" src="../static/obvestila/img/avtobus2.jpg">
+	   	</figure>
+    </div>
+    <footer style="text-align: center;">
+      <div>
+        <p style="float: left; padding-left: 10%;">Ustvaril: Martin Kozmelj</p>
+        <p style="float: right; padding-right: 10%;">Kontakt: <a href="kozmelj-martin@gmail.com">kozmelj-martin@gmail.com</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

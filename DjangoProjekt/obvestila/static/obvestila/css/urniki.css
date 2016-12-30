@@ -1,0 +1,70 @@
+.urnik, .urnik1 {
+	height: 500px;
+	margin: 50px;
+	margin-bottom: 100px;
+}
+
+.s2 {
+	border: 2px solid #ff940E;
+	width: 40%;
+	float: right;
+	margin-right: 25px;
+}
+
+.s1 {
+	border: 2px solid #ff940E;
+	width: 40%;
+	float: left;
+	margin-left: 25px;
+	height: 250px;
+}
+
+.n1 {
+	margin-left: 20px;
+}
+
+table {
+	padding: 30px;
+	width: 100%;
+	margin: auto;
+}
+
+.okvir {
+	border: 1px solid #ff940E;	
+	background-color: #ddd7cc;
+}
+
+.urnik1 {
+	display: none;
+	margin-top: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+	.urnik {
+		display: none;
+	}
+
+	.urnik1 {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.urnik1 {
+		margin-top: -300px;
+	}
+}
+
+@media only screen and (max-device-width: 900px) {
+	.urnik1 {
+		margin-top: 15px;
+	}
+
+	nav {
+		position: absolute;
+		z-index: 1;
+		float: right;
+		left: 73%;
+		top: -1px;
+	}
+}

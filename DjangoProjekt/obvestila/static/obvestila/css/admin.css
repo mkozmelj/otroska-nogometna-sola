@@ -1,0 +1,11 @@
+body {
+	width: 30%;
+	margin-left: 34%;
+	margin-top: 5%;
+	text-align: center;
+}
+
+.opozorilo {
+	font-size: 12px;
+	color: red;
+}

@@ -1,0 +1,114 @@
+h1, h2, p {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-right: 25px;
+}
+
+.dopis {
+	margin: 0;
+	font-size: 15px;
+}
+
+.obvestilo {
+    border: 1px solid #ff940E;  
+    background-color: #ddd7cc;
+    margin-left: 10%;
+    margin-top: 60px;
+    display: block;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal; 
+    font-weight: 500;
+}
+
+.glavno {
+    width: 100%;
+}
+
+.levo {
+	float: left;
+	width: 50%;
+}
+
+.desno {
+	float: right;
+	width: 30%;
+    padding-top: 5%;
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 410px){
+	.desno {
+		top: 25%;
+        position: absolute;
+        left: 60%;
+	}
+
+    nav {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 2600px) and (min-width: 1510px) {
+    .desno {
+        position: absolute;
+        left: 60%;
+    }
+
+    nav {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .desno {
+        margin-top: 50%;
+        position: absolute;
+        left: 60%;
+    }
+
+    nav {
+        position: relative;
+        z-index: 1;
+    }
+}
+.cal_calendar
+{
+    border:1px solid black;
+    padding:1px;
+    background-color:#ffce4d;
+    width:300px;
+    margin:auto;
+    height:246px;
+}
+.cal_calendar th
+{
+    border:1px solid black;
+    background-color:#ddd7cc;
+    width:36px;
+}
+.cal_calendar td
+{
+    border:1px solid black;
+    background-color:#ddd7cc;
+    text-align:center;
+    width:36px;
+    height:36px;
+}
+.cal_today
+{
+    color:#ff940E;
+    font-weight:bold;
+}
+.cal_days_bef_aft
+{
+    color:#5a779e;
+}

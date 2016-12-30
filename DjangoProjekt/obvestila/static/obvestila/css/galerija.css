@@ -1,0 +1,69 @@
+h1 {
+	padding-left: 20px;	
+}
+
+.slike {
+	margin: auto;
+	width: 80%;
+}
+
+a {
+	color: black;
+	font-size: 20px;
+}
+
+table {
+	padding: 20px;
+	width: 100%; 
+	margin: auto;
+}
+
+.slike1 {
+	display: none;
+}
+
+.sl {
+		width: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+	.slike {
+		display: none;
+	}
+
+	.slike1 {
+		display: block;
+	}
+
+	.sl {
+		width: 50%;
+	}
+}
+
+.video {
+	display: inline;
+}
+
+.video1 {
+	display: none;
+}
+
+@media screen and (max-width: 1200px) {
+	.video {
+		display: none;
+	}
+
+	.video1 {
+		display: block;
+	}
+}
+
+iframe {
+	margin-left: 20%;
+}
+
+@media only screen and (max-device-width: 900px) {
+	iframe {
+		margin-bottom: 50px;
+	}
+}

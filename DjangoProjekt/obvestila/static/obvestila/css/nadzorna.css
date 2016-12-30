@@ -1,0 +1,57 @@
+.celo {
+	width: 100%;
+	text-align: center;
+	display: inline;
+	padding-bottom: 20px;
+}
+
+.info {
+	float: left;
+	width: 30%;
+	padding-left: 10%;
+	padding-top: 20px;
+}
+
+.obv {
+	float: right;
+	width: 30%;
+	padding-right: 10%;
+	padding-top: 20px;
+}
+
+input[type="file"] {
+	padding-left: 50px;
+}
+
+.sprememba {
+	padding-top: 50px;
+}
+
+@media only screen and (max-device-width: 900px) {
+	.obv, .info {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		padding: 0;
+	}
+
+	.obv, .info{
+		padding-bottom: 50px;
+	}
+
+
+	#obvestil {
+		width: 300px;
+	}
+}
+
+
+@media only screen and (max-device-width: 400px) {
+	.logo img {
+		width: 80%;
+	}
+
+	.celo {
+		width: 100%;
+	}
+}

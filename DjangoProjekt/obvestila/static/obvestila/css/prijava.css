@@ -1,0 +1,60 @@
+.d1 {
+	width: 80%;
+	margin-top: 5%;
+	margin-left: 10%;
+}
+
+.d2 {
+	display: none;
+}
+
+.prijava {
+	float: left;
+	width: 40%;
+	border: 1px solid #ffce4d;	
+	background-color: #ddd7cc;
+	margin-left: 5%;
+	display: block;
+	text-align: center;
+}
+
+.registracija {
+	float: right;
+	width: 40%;
+	border: 1px solid #ffce4d;	
+	background-color: #ddd7cc;
+	margin-right: 5%;
+	display: block;
+	text-align: center;
+}
+
+.besedilo {
+	text-align: left;
+	margin-left: 25%;
+}
+
+@media only screen and (max-width: 1200px) {
+	.d1 {
+		display: none;
+	}
+
+	.d2 {
+		display: block;	
+	}
+
+	.prijava, .registracija {
+		float: none;
+		margin: 0;
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	.registracija {
+		margin-bottom: 30px;
+	}
+}
+
+.opozorilo {
+	font-size: 12px;
+	color: red;
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+	margin: 0;
+}
+
+h1, h2, h3, p, label, input, a, button, table, textarea[placeholder]{	
+	font-family: 'Roboto', sans-serif;
+}
+
+input[placeholder] {
+	text-align: left;
+	padding: 3px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	color: #ff940E; 
+	font-size: 40px;
+}
+
+h2 {
+	color: #ff940E; 
+	font-size: 25px;
+}
+
+p {
+	font-size: 18px;
+}
+
+button {
+	background-color: #ffce4d; 
+	border: 1px solid #ff940E;	
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	position: relative;
+}
+
+input[type="text"], input[type="password"] {
+	width: 200px;
+}
+
+.naslov {
+	color: #ff940E; 
+	font-size: 25px;
+}
+
