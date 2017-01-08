@@ -6,7 +6,6 @@
   {% load static %}
   <link href="{% static 'obvestila/img/ikona.ico'%}" rel="icon" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="{% static 'obvestila/css/style.css' %}">
-   <link rel="stylesheet" type="text/css" href="{% static 'obvestila/css/obvestila.css.css' %}">
   <link rel="stylesheet" type="text/css" href="{%  static 'obvestila/css/navbar.css' %}">
   <script type="text/javascript" src="{% static 'obvestila/scripts/script.js' %}"></script>
 </head>
@@ -15,7 +14,7 @@
       {% if logged %}
             <div class = "logo"><a href="/trener"><img alt="logo" src="/static/obvestila/img/logo_ons.png"></a></div>
         {% else %}
-            <div class = "logo"><a href="/index"><img alt="logo" src="/static/obvestila/img/logo_ons.png"></a></div>
+            <div class = "logo"><a href="index"><img alt="logo" src="/static/obvestila/img/logo_ons.png"></a></div>
         {% endif %}
       <nav>
         <img alt="hambi" id="hamburger" src="/static/obvestila/img/meni.png">
@@ -32,24 +31,12 @@
       </nav>
     </div>
     <br>
-    <div class="uredi" style="text-align: center">
-        <form action="../../obvestila/uredi/p/{{ besedilo.id }}" method="post">
-                    {% csrf_token %}
-                    <textarea id = "obvestil" name="textarea" style="width: 75%; height: 200px; text-align: left;" placeholder="Vpisite obvestilo">{{ besedilo.besedilo }}</textarea>
-                    <br>
-                    <button style="margin-right: 30px" type="submit">Uredi</button>
-                    <a href="/obvestila/izbrisi/{{ besedilo.id }}">
-                        <img src="/static/obvestila/img/delete.png" style="margin-top: 5px" alt="delete">
-                    </a>
-                    <br>
-
-                    <br>
-        </form>
-    </div>
+    {%  block main %}
+    {%  endblock %}
     <footer style="text-align:center;">
       <div class = "noga">
         <p style="float: left; padding-left: 10%;">Ustvaril: Martin Kozmelj</p>
-        <p style="float: right; padding-right: 10%;">Kontakt: <a href="mailto:kozmelj-martin@gmail.com">kozmelj-martin@gmail.com</a>.</p>
+        <p style="float: right; padding-right: 10%;">Kontakt: <a href="mailto: kozmelj-martin@gmail.com">kozmelj-martin@gmail.com</a>.</p>
       </div>
     </footer>
   </body>

@@ -1,81 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Otroska nogometna sola</title>
-  <meta charset="utf-8"/>
-  <link href="favicon.ico" rel="icon" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <link rel="stylesheet" type="text/css" href="../css/galerija.css">
-  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-</head>
-  <body>
-    <div class = "bar">
-      <div class = "logo"><a href="../../../home/templates/home/index.html"><img alt="logo" src="../img/logo_ons.png"></a></div>
-      <nav>
-        <img alt="hambi" src="../img/meni.png">
-        <ul>
-          <li><a href="obvestila.html">OBVESTILA</a></li>
-          <li><a href="urniki.html">URNIKI</a></li>
-          <li><a href="galerija.html">GALERIJA</a></li>
-          <li><a href="prijava.html">PRIJAVA</a></li>
-        </ul>
-      </nav>
-    </div>
-    <br>
+{%  extends 'obvestila/base.html' %}
+{%  block main %}
+    <link rel="stylesheet" type="text/css" href="http://kozmelj.si/css/galerija.css">
     <h1>Galerija</h1>
     <div class = "slike">
       <table>
         <tr>
           <th>
             <a href="https://goo.gl/photos/te6R2bnTtvMoVatf8">
-              <img class = "sl" alt="avto1" src="../img/avtobus2016.png">
+              <img class = "sl" alt="avto1" src="http://kozmelj.si/img/avtobus2016.png">
               <p class="naslov">Nogometni avtobus 2016</p>
             </a>
           </th>
           <th>
             <a href="https://goo.gl/photos/q1DkkkdewxRLWEHc8">
-              <img class = "sl" alt="avto2" src="../img/avtobus2015.png">
+              <img class = "sl" alt="avto2" src="http://kozmelj.si/img/avtobus2015.png">
               <p class="naslov">Nogometni avtobus 2015</p>
             </a>
           </th>
           <th>
             <a href="https://goo.gl/photos/uzgnG7FgVdvqmY8L9">
-              <img class = "sl" alt="avto3" src="../img/avtobus2014.png">
+              <img class = "sl" alt="avto3" src="http://kozmelj.si/img/avtobus2014.png">
               <p class="naslov">Nogometni avtobus 2014</p>
-            </a>
-          </th>
-        </tr>
-      </table>      
-    </div>
-     <div class = "slike1">
-      <table>
-        <tr>
-          <th>
-            <a href="https://goo.gl/photos/te6R2bnTtvMoVatf8">
-              <img alt="avto4" src="../img/avtobus2016.png">
-              <br>
-              <p class="naslov"> Nogometni avtobus 2016</p>
-              <br>
-            </a>
-          </th>
-        </tr>
-        <tr>
-          <th>
-            <a href="https://goo.gl/photos/q1DkkkdewxRLWEHc8">
-              <img alt="avto5" src="../img/avtobus2015.png">
-              <br>
-              <p class="naslov"> Nogometni avtobus 2015</p>
-              <br>
-            </a>
-          </th>
-        </tr>
-        <tr>
-          <th>
-            <a href="https://goo.gl/photos/uzgnG7FgVdvqmY8L9">
-              <img alt="avto6" src="../img/avtobus2014.png">
-              <br>
-              <p class="naslov"> Nogometni avtobus 2014</p>
-              <br>
             </a>
           </th>
         </tr>
@@ -87,16 +32,4 @@
       <iframe height = "290" style = "float: left; margin-left: 5%; width: 32%;" src="https://www.youtube.com/embed/PMMbXyOOrM8"  allowfullscreen></iframe>
       <iframe height = "290" style = "float: right; margin-right: 5%; width: 32%; margin-bottom: 50px" src="https://www.youtube.com/embed/i8oSWL1udYY" allowfullscreen></iframe>
     </div>
-    <div class = "video1">
-      <iframe width="560" height="315" style = "margin-bottom: 25px;" src="https://www.youtube.com/embed/PMMbXyOOrM8" allowfullscreen></iframe>
-      <br>
-      <iframe width="560" height="315"  src="https://www.youtube.com/embed/i8oSWL1udYY" allowfullscreen></iframe>
-    </div>
-    <footer style="text-align:center;">
-      <div class = "noga">
-        <p style="float: left; padding-left: 10%;">Ustvaril: Martin Kozmelj</p>
-        <p style="float: right; padding-right: 10%;">Kontakt: <a href="kozmelj-martin@gmail.com">kozmelj-martin@gmail.com</a>.</p>
-      </div>
-    </footer>
-  </body>
-</html>
+{% endblock %}

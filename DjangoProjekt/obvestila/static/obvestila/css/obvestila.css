@@ -112,3 +112,11 @@ h2 {
 {
     color:#5a779e;
 }
+
+textarea {
+    width: 50%;
+}
+
+.uredi {
+    text-align: center;
+}

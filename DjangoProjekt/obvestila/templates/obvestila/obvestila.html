@@ -1,38 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Otroska nogometna sola</title>
-  <meta charset="utf-8"/>
-  {% load static %}
-  <link href="favicon.ico" rel="icon" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="{% static 'obvestila/css/style.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'obvestila/css/obvestila.css' %}">
-  <link rel="stylesheet" type="text/css" href="{%  static 'obvestila/css/navbar.css' %}">
-  <script type="text/javascript" src="{% static 'obvestila/scripts/script.js' %}"></script>
-
-</head>
-  <body>
-    <div class = "bar">
-      <div class = "logo"><a href="../../index"><img alt="logo" src="../../static/obvestila/img/logo_ons.png"></a></div>
-      <nav>
-        <img alt="hambi" id="hamburger" src="../../static/obvestila/img/meni.png">
-        <ul>
-          <li><a href="../../obvestila">OBVESTILA</a></li>
-          <li><a href="urniki.html">URNIKI</a></li>
-          <li><a href="galerija.html">GALERIJA</a></li>
-          <li><a href="prijava.html">PRIJAVA</a></li>
-        </ul>
-      </nav>
-    </div>
+{%  extends 'obvestila/base.html' %}
+{%  block main %}
+    <link rel="stylesheet" type="text/css" href="http://kozmelj.si/css/obvestila.css">
     <div class="glavno">
       <div class = "levo">
         <h1>Obvestila</h1>
         {% if vsa_obvestila %}
             {% for obvestilo in vsa_obvestila %}
-              <div class = "obvestilo">
-              <p>{{ obvestilo.besedilo }}</p>
-              <p style="float: right;" class = "dopis">{{ obvestilo.avtor }}</p>
-              <p style="float: left;" class = "dopis">{{ obvestilo.datum }}</p>
+              <div class = "obvestilo" >
+                  {% if logged %}
+                    <a href="/obvestila/uredi/{{ obvestilo.id }}">
+                      <img src="/static/obvestila/img/edit.png" alt="edit" style="float: right; margin-bottom: 20px"><br>
+                    </a>
+                  {% endif %}
+                  <p>{{ obvestilo.besedilo }}</p>
+
+                  <p style="float: right;" class = "dopis">{{ obvestilo.avtor }}</p>
+                  <p style="float: left;" class = "dopis">{{ obvestilo.datum }}</p>
               </div>
             {% endfor %}
         {% else %}
@@ -42,9 +25,4 @@
         {% endif %}
         </div>
       </div>
-      <div class = "desno">
-
-      </div>
-    </div>
-  </body>
-</html>
+ {% endblock %}

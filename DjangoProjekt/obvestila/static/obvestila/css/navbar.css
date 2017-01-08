@@ -30,8 +30,8 @@ nav li {
 nav a {
 	text-decoration: none;
 	padding: 15px;
-  color: #ff940E;
-  font-size: 30px; 
+    color: #ff940E;
+    font-size: 30px;
 }
 
 nav a:hover {
